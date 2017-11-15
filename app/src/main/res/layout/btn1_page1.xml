@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mybackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_centerHorizontal="true"
+            android:text="往左滑可刪除"
+            android:textSize="16dp"
+            android:textColor="@color/mygray"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:text="儲存"
+                android:background="@drawable/save_load_selector"
+                android:onClick="clicksave"/>
+
+            <Button
+                android:id="@+id/load"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="6dp"
+                android:text="載入"
+                android:background="@drawable/save_load_selector"
+                android:onClick="clickload"/>
+        </LinearLayout>
+
+        <!-- 使用自定義的SideslipListView -->
+
+        <com.example.asuspc.customized_list.SideslipListView
+            android:id="@+id/sideslipListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawablePadding="6dp"
+        android:text="新增食物"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:background="@drawable/selector_btn_green"
+        android:onClick="clickAlertDialogAdd"/>
+
+    <Button
+        android:id="@+id/btn_luckpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawablePadding="6dp"
+        android:text="GO"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:background="@drawable/selector_btn_green"
+        android:onClick="clickluckpan" />
+</RelativeLayout>

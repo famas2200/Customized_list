@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">現在吃什麼</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3622509779155925/4620793257</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

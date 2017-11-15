@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 設定圓裡面的個別的名字 -->
+    <string-array name="names">
+
+        <item>action</item>
+        <item>adventure</item>
+        <item>combat</item>
+        <item>moba</item>
+        <item>other</item>
+        <item>word</item>
+    </string-array>
+
+    <!-- 設定圓裡面的個別的圖
+    <string-array name="icons">
+
+        <item>action</item>
+        <item>adventure</item>
+        <item>combat</item>
+        <item>moba</item>
+        <item>other</item>
+        <item>role</item>
+        <item>sports</item>
+        <item>words</item>
+    </string-array> -->
+</resources>

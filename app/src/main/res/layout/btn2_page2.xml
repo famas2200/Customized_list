@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/mybackground">
+
+    <TextView
+        android:id="@+id/tv_eatwhat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Eat What?"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/mygreen"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/line3"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/tv_eatwhat3"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/mygreen"/>
+
+    <TextView
+        android:id="@+id/Q2_HowMuch"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@id/line3"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="預算多少呢?"
+        android:textSize="28sp"
+        android:textColor="@color/mypink"
+        android:typeface="monospace"/>
+
+    <Button
+        android:id="@+id/P2_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/Q2_HowMuch"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:tag="錢不是問題"
+        android:text="錢不是問題"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:background="@drawable/selector_btn_green"
+        android:onClick="click1"/>
+
+    <Button
+        android:id="@+id/P2_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Q2_HowMuch"
+        android:layout_alignParentLeft="true"
+
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:tag="想吃省一點"
+        android:text="想吃省一點"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:background="@drawable/selector_btn_green"
+        android:onClick="click1"/>
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:luckpan="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:background="@color/mybackground"
+    tools:context="com.example.asuspc.customized_list.Main2Activity">
+
+    <TextView
+        android:id="@+id/tv_eatwhat_main2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Eat What?"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/mygreen"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/line_main2"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/tv_eatwhat_main2"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/mygreen"/>
+
+    <com.example.asuspc.customized_list.circle_view.LuckPanLayout
+        android:id="@+id/luckpan_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent">
+
+        <com.example.asuspc.customized_list.circle_view.RotatePan
+            android:id="@+id/rotatePan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            luckpan:names="@array/names" />
+
+        <!-- luckpan:pannum="8"其數量要跟arrays.xml的string-arrays的item數相同 -->
+
+        <ImageView
+            android:id="@+id/go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="startbtn"
+            android:src="@mipmap/node"
+            android:clickable="true"
+            android:onClick="rotation"/>
+    </com.example.asuspc.customized_list.circle_view.LuckPanLayout>
+</RelativeLayout>

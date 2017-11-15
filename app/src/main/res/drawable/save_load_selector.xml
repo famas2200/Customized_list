@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按壓時 -->
+    <item android:state_pressed="true">
+
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval" >
+
+            <!-- 圓形內部的填充顏色 -->
+            <solid android:color="#f1ebeb"/>
+
+            <size android:height="40dp"
+                android:width="40dp"/>
+
+            <!-- 環狀外部寬度的顏色 -->
+            <!-- <stroke android:width="0dp"
+            android:color="#777777"/> -->
+        </shape>
+    </item>
+
+    <!-- 預設時item的android:color="#000" -->
+    <item >
+
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval" >
+
+            <!-- 圓形內部的填充顏色 -->
+            <solid android:color="#e7e7e7"/>
+
+            <size android:height="40dp"
+                android:width="40dp"/>
+
+            <!-- 環狀外部寬度的顏色 -->
+            <!-- <stroke android:width="0dp"
+            android:color="#777777"/> -->
+        </shape>
+    </item>
+</selector>

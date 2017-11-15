@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/mybackground">
+
+    <TextView
+        android:id="@+id/tv_eatwhat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Eat What?"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@color/mygreen"
+        android:typeface="monospace"/>
+
+    <TextView
+        android:id="@+id/line2"
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/tv_eatwhat2"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/mygreen"/>
+
+    <TextView
+        android:id="@+id/Q1_AreYouHungry"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@id/line2"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="很餓嗎?"
+        android:textColor="@color/mypink"
+        android:textSize="28sp"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/P1_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/Q1_AreYouHungry"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawablePadding="6dp"
+        android:drawableLeft="@drawable/happyemotion"
+        android:tag="很餓"
+        android:text="很餓"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:background="@drawable/selector_btn_green"
+        android:onClick="click"/>
+
+    <Button
+        android:id="@+id/P1_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/Q1_AreYouHungry"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawablePadding="6dp"
+        android:drawableLeft="@drawable/nothungry"
+        android:tag="不餓"
+        android:text="不餓"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:background="@drawable/selector_btn_green"
+        android:onClick="click"/>
+</RelativeLayout>
